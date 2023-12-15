@@ -12,7 +12,7 @@ public class DoorOpeningTrigger : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            myAnimationController.SetBool("DoorOpen", true);
+            myAnimationController.SetBool("player_nearby", true);
         }
         
     }
@@ -21,7 +21,7 @@ public class DoorOpeningTrigger : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            myAnimationController.SetBool("DoorOpen", false);
+            myAnimationController.SetBool("player_nearby", false);
         }
         
     }
